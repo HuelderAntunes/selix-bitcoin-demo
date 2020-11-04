@@ -14,10 +14,10 @@ export class ExperienceState {
         scene: new THREE.Scene(),
         cameras: {
           default: new THREE.PerspectiveCamera(
-            60,
+            75,
             window.innerWidth / window.innerHeight,
-            1,
-            10000
+            0.1,
+            1000
           )
         }
       }

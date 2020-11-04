@@ -1,0 +1,16 @@
+.s2_blockchain {
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  color: #ffffff;
+  padding-left: 52px;
+  h2 {
+    font-size: 35px;
+    span {
+        display: block;
+      }
+  }
+  
+}

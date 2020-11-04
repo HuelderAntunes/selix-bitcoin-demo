@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import "content/nav";
-@import "content/headline";
-@import "content/footer";
+@import "content/s1_start";
+@import "content/s2_blockchain";
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -13,6 +13,7 @@ html,
 body, #stage {
   width: 100%;
   height: 100%;
+  scroll-snap-type: y proximity;
 }
 
 * {
@@ -20,6 +21,25 @@ body, #stage {
   pointer-events: none;
 }
 
+
+#loading {
+  color: #ffffff;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1000;
+
+  .progressBar {
+    background-color: #ffffff;
+    width:1%;
+    height: 10px;
+  }
+}
 
 #stage {
   canvas {
@@ -30,8 +50,9 @@ body, #stage {
  
   #root {
     overflow: hidden;
-    height: 100%;
+    // height: 100%;
     color: #ffffff;
+    
   }
 
   #canvas {

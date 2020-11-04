@@ -1,9 +1,11 @@
 import * as THREE from 'three/build/three.module'
+import setupLoading from './src/loading'
 import Experience from './selix/experience'
 import main from './src/main'
 export const exp = new Experience()
 
 exp.subscribeToInit('windowResize', ctx => {
+  setupLoading()
   const { camera, renderer } = ctx.getDefaults()
   renderer.setPixelRatio(window.devicePixelRatio)
 

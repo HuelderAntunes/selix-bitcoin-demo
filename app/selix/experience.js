@@ -14,6 +14,9 @@ class Experience {
     this.onPointerMovePub = {}
 
     this.subscribeToInit('__renderer', ctx => {
+      this.state.renderers.default.autoClear = false
+      this.state.renderers.default.shadowMap.enabled = true
+      this.state.renderers.default.shadowMap.type = THREE.BasicShadowMap
       document
         .getElementById('canvas')
         .appendChild(this.state.renderers.default.domElement)

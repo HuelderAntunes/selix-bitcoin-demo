@@ -1,32 +1,31 @@
-#headline {
-  height: calc(100% - 78px -30px);
+.s1_start {
+
+  scroll-snap-align: start;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
+  height: 100vh;
 
-  margin-left: 25px;
-
-  h2 {
-    span {
+  span {
       display: block;
     }
-  }
+  
   
   .buttons {
-    margin-top: 15px;
+    margin-top: 300px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
-    max-width: 255px;
+
     a {
-      opacity: 0.8;
       pointer-events: all;
       cursor: pointer;
       color: #ffffff;
       text-decoration: none;
       border: 1px solid #ffffff;
       padding: 15px;
+      transition: background-color 0.2s linear;
+      
     }
 
     a.filled:hover {
@@ -34,7 +33,8 @@
     }
 
     a:hover {
-      background-color: #0000001a;
+      background-color: #ffffff;
+      color: #000000;
     }
 
     .filled {
@@ -43,4 +43,5 @@
     }
 
   }
+  
 }
